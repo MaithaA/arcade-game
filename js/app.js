@@ -18,10 +18,10 @@ Enemy.prototype.update = function(dt) {
     // all computers.
      this.x += this.speed * dt;
       // when off canvas
-    if (this.x > 550) {
+     if (this.x > 550) {
         this.x = -100;
         this.speed = 100 + Math.floor(Math.random() * 512);
-    }
+     }
 
     // Check for collision between player and enemies
     if (player.x < this.x + 60 &&
