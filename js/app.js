@@ -68,6 +68,7 @@ Player.prototype.update = function() {
     if (this.y < 0) {
         this.x = 200;
         this.y = 380;
+        document.getElementById('playerScore').innerHTML = 'congratulations you win the game';
     }
 };
 
